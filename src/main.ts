@@ -21,6 +21,7 @@ for (let i = 0; i < listArr.length; i++) {
         video({
           url,
           elem: ele,
+          autoplay: true,
         })
       }
     })
