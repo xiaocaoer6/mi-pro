@@ -123,9 +123,8 @@ class Video implements componentSetting{
      // 播放的进度比例
      let scale = videoContent.currentTime / videoContent.duration
      let scaleSuc = videoContent.buffered.end(0) / videoContent.duration
-     console.log(videoContent);
-     
-     
+     console.log(videoContent.currentTime);
+     debugger
      playProgress[0].style.width =  scaleSuc * 100 +'%'
      playProgress[1].style.width =  scale * 100 +'%'
      playProgress[2].style.left =  scale * 100 +'%'
